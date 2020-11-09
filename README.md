@@ -42,6 +42,8 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 |       ✅       | SHOLAT                            |
 |       ✅       | QURAN                             |
 |       ✅       | POKEMON                           |
+|       ✅       | LOLI                              |
+|       ✅       | DRAGON BALL                       |
 |       ✅       | KAMING SUN                        |
 
 ket : ✅ : aktif
