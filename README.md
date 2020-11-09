@@ -29,7 +29,7 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 | :-----------: | :--------------------------------:  |
 |       ✅       |    PANTUN                         |
 |       ✅       | ANIMEPICT                         |
-|       ✅       | STICKER                           |
+|       ✅       | STIKER                            |
 |       ✅       | NULIS                             |
 |       ✅       | QUOTES                            |
 |       ✅       | RANDOM PICT                       |
