@@ -570,7 +570,7 @@ const get = require('got')
 
 if (text.includes("!anime"))
    {
-    var items = ["anime demon slayer","anime naruto","anime one peace","anime dragon ball","anime boruto","anime my hero academia","anime zero two","anime inuyasha"];
+    var items = ["anime demon slayer","anime naruto","anime one peace","anime dragon ball","anime boruto","anime my hero academia","anime zero two","anime inuyasha","anime high school dxd"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
