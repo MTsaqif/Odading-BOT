@@ -28,12 +28,11 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 | KEADAAN       |               FITUR     |
 | :-----------: | :--------------------------------:  |
 |       ✅       |    PANTUN                         |
-|       ✅       | ANIMEPICT                         |
+|       ✅       | ANIME                             |
 |       ✅       | STIKER                            |
 |       ✅       | NULIS                             |
 |       ✅       | QUOTES                            |
 |       ✅       | RANDOM PICT                       |
-|       ✅       | ANIMEPICT                         |
 |       ✅       | LIRIK                             |
 |       ✅       | ALAY                              |
 |       ✅       | YT,YTMP3,IG,TWT DOWNLOADER        |
@@ -43,7 +42,6 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 |       ✅       | QURAN                             |
 |       ✅       | POKEMON                           |
 |       ✅       | LOLI                              |
-|       ✅       | DRAGON BALL                       |
 |       ✅       | KAMING SUN                        |
 
 ket : ✅ : aktif
@@ -55,4 +53,4 @@ ket : ✅ : aktif
 * [`termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
 * [`botst4rz`](https://github.com/Bintang73/botst4rz)
 ## DONASI
-* [`Saweria`](https://saweria.co/Mwmaulana310)
+via pulsa 081220595591
