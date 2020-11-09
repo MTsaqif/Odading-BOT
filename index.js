@@ -596,9 +596,9 @@ if (text.includes("!animepict"))
     
     });
     }
-if (text.includes("!hentai"))
+if (text.includes("!onepeace"))
    {
-    var items = ["hentai"];
+    var items = ["onepeace"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
