@@ -381,7 +381,7 @@ conn.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok' ,M
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '!sticker')
+      if (caption == '!stiker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
@@ -568,37 +568,9 @@ const get = require('got')
     });
     }
 
-if (text.includes("!animepict"))
+if (text.includes("!anime"))
    {
-    var items = ["anime girl"];
-    var nime = items[Math.floor(Math.random() * items.length)];
-    var url = "https://api.fdci.se/rep.php?gambar=" + nime;
-    
-    axios.get(url)
-      .then((result) => {
-        var n = JSON.parse(JSON.stringify(result.data));
-        var nimek =  n[Math.floor(Math.random() * n.length)];
-        imageToBase64(nimek) 
-        .then(
-            (response) => {
-	var buf = Buffer.from(response, 'base64'); 
-              conn.sendMessage(
-            id,
-              buf,MessageType.image)
-       
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error);
-            }
-        )
-    
-    });
-    }
-if (text.includes("!onepeace"))
-   {
-    var items = ["onepeace"];
+    var items = ["anime demon slayer","anime naruto","anime one peace","anime dragon ball","anime boruto","anime my hero academia","anime zero two","anime inuyasha"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
@@ -627,66 +599,7 @@ if (text.includes("!onepeace"))
 
 if (text.includes("!pokemon"))
    {
-    var items = ["pokemon"];
-    var nime = items[Math.floor(Math.random() * items.length)];
-    var url = "https://api.fdci.se/rep.php?gambar=" + nime;
-    
-    axios.get(url)
-      .then((result) => {
-        var n = JSON.parse(JSON.stringify(result.data));
-        var nimek =  n[Math.floor(Math.random() * n.length)];
-        imageToBase64(nimek) 
-        .then(
-            (response) => {
-	var buf = Buffer.from(response, 'base64'); 
-              conn.sendMessage(
-            id,
-              buf,MessageType.image)
-       
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error);
-            }
-        )
-    
-    });
-    }
-
-if (text.includes("!naruto"))
-   {
-    var items = ["Naruto"];
-    var nime = items[Math.floor(Math.random() * items.length)];
-    var url = "https://api.fdci.se/rep.php?gambar=" + nime;
-    
-    axios.get(url)
-      .then((result) => {
-        var n = JSON.parse(JSON.stringify(result.data));
-        var nimek =  n[Math.floor(Math.random() * n.length)];
-        imageToBase64(nimek) 
-        .then(
-            (response) => {
-	var buf = Buffer.from(response, 'base64'); 
-              conn.sendMessage(
-            id,
-              buf,MessageType.image)
-       
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error);
-            }
-        )
-    
-    });
-    }
-
-
-if (text.includes("!dragonball"))
-   {
-    var items = ["dragonball"];
+    var items = ["anime pokemon"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
