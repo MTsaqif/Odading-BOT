@@ -428,7 +428,7 @@ const get = require('got')
     console.log(body[0]['name'])
     conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n😭Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
 }
-   if (text.includes("!quotes"))
+   if (text.includes("#quotes"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
@@ -437,19 +437,15 @@ const get = require('got')
             let $ = cheerio.load(result.data);
             var author = $('a[class="auteurfbnaam"]').contents().first().text();
             var kata = $('q[class="fbquote"]').contents().first().text();
-
             conn.sendMessage(
                id,
                `
-      Quotes untuk 
-*${id.split("@s.whatsapp.net")[0]}*
      _${kata}_
         
     
 	*~${author}*
          `, MessageType.text
             );
-
          });
    }
    else if (text.includes("!nama ")) 
