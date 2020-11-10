@@ -15,9 +15,9 @@ const info = require("./lib/info.js");
 /////////////////
 const BotName = 'Odading BOT'; 
 const instagram = 'https://instagram.com/aditia_pribadiansyah/'; 
-const telegram = 'Gak Punya Telegram'; 
+const telegram = 'gak punya telegram :>'; 
 const kapanbotaktif = '24 JAM'; 
-const youtube = 'GAK PUNYA CENEL YT';
+const youtube = 'gak punya cenel yutub :>';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -85,7 +85,7 @@ conn.on('message-new', async(m) =>
 
 if (text.includes("¥buatgrup"))
    {
-var nama = text.split("¥buatgrup")[1].split("-nomor")[0];
+var nama = text.split("!buatgrup")[1].split("-nomor")[0];
 var nom = text.split("-nomor")[1];
 var numArray = nom.split(",");
 for ( var i = 0; i < numArray.length; i++ ) {
@@ -184,7 +184,7 @@ else if (text == 'TEST')
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
 // Fitur
-if(text.includes("!cek")){
+if(text.includes("¥cek")){
 var num = text.replace(/!cek/ , "")
 var idn = num.replace("0","+62");
 
@@ -203,8 +203,8 @@ conn.sendMessage(id, teks, MessageType.text)
 
 if (text.includes("¥nulis")){
   const teks = text.replace(/¥nulis /, "")
-axios.get(`https://st4rz.herokuapp.com/api/nulis?text=${teks}`).then((res) => {
-    let hasil = `Download sendiri ya hasilnya dibawah, soalnya kalo dikirim langsung hasilnya blur\n\n${res.data.result.data}`;
+axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
+    let hasil = `Silahkan download hasil dibawah ini agar hasilnya lebih bagus! 👌\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -262,8 +262,8 @@ axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${text}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes("¥sholat")){
-  const teks = text.replace(/¥sholat /, "")
+if (text.includes("!sholat")){
+  const teks = text.replace(/!sholat /, "")
   axios.get(`https://mhankbarbar.herokuapp.com/api/jadwalshalat?daerah=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then ((res) =>{
   let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n👉Imsyak : ${res.data.Imsyak}\n👉Subuh : ${res.data.Subuh} WIB\n👉Dzuhur : ${res.data.Dzuhur}WIB\n👉Ashar : ${res.data.Ashar} WIB\n👉Maghrib : ${res.data.Maghrib}\n👉Isya : ${res.data.Isya} WIB\n👉Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
@@ -391,7 +391,7 @@ var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, info.info(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagram, telegram, youtube, kapanbotaktif) ,MessageType.text);
 }
 else if (text == '¥pict'){
-conn.sendMessage(id, 'ulangi dengan  ¥pict cewek/cowok\n\nMisal: ¥pict cowok' ,MessageType.text);
+conn.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -412,12 +412,11 @@ conn.sendMessage(id, 'ulangi dengan  ¥pict cewek/cowok\n\nMisal: ¥pict cowok' 
          });
       }
    }
-
    if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '¥pantun')
+      if (is == '!pantun')
       {
 
          fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-pantun-pakboy.txt')
@@ -454,15 +453,19 @@ const get = require('got')
             let $ = cheerio.load(result.data);
             var author = $('a[class="auteurfbnaam"]').contents().first().text();
             var kata = $('q[class="fbquote"]').contents().first().text();
+
             conn.sendMessage(
                id,
                `
+      Quotes untuk 
+*${id.split("@s.whatsapp.net")[0]}*
      _${kata}_
         
     
 	*~${author}*
          `, MessageType.text
             );
+
          });
    }
    else if (text.includes("¥nama ")) 
@@ -495,9 +498,9 @@ const get = require('got')
  MessageType.text);
   });
   }
-  else if (text.includes("¥pasangan ")) {
+  else if (text.includes("!pasangan ")) {
     const request = require('request');
-    var gh = text.split("¥pasangan ")[1];
+    var gh = text.split("!pasangan ")[1];
     var namamu = gh.split("&")[0];
     var pasangan = gh.split("&")[1];
     request.get({
@@ -671,9 +674,8 @@ if (text.includes("¥loli"))
     
     });
     }
-
-else if (text.includes("¥ttsid")) {
-  var teks = text.split("!ttsid ")[1];
+ else if (text.includes("¥ttsid")) {
+  var teks = text.split("¥ttsid ")[1];
   var path = require('path');
   var text1 = teks.slice(6);
   text1 = suara;
