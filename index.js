@@ -143,6 +143,22 @@ else if (text == 'Bro')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
+else if (text == '!help')
+{
+conn.sendMessage(id, tambahan.!help ,MessageType.text);
+}
+else if (text == '#help')
+{
+conn.sendMessage(id, tambahan.#help ,MessageType.text);
+}
+else if (text == '!menu')
+{
+conn.sendMessage(id, tambahan.!menu ,MessageType.text);
+}
+else if (text == '#menu')
+{
+conn.sendMessage(id, tambahan.#menu ,MessageType.text);
+}
 else if (text == 'P')
 {
 conn.sendMessage(id, tambahan.p ,MessageType.text);
