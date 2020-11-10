@@ -147,17 +147,9 @@ else if (text == '!help')
 {
 conn.sendMessage(id, tambahan.help ,MessageType.text);
 }
-else if (text == '#help')
-{
-conn.sendMessage(id, tambahan.#help ,MessageType.text);
-}
 else if (text == '!menu')
 {
 conn.sendMessage(id, tambahan.menu ,MessageType.text);
-}
-else if (text == '#menu')
-{
-conn.sendMessage(id, tambahan.#menu ,MessageType.text);
 }
 else if (text == 'P')
 {
