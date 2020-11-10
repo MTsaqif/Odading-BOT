@@ -420,13 +420,9 @@ conn.sendMessage(id, 'ulangi dengan  ¥pict cewek/cowok\n\nMisal: ¥pict cowok' 
                     await exec(`gify ${filename} ./media/output.gif --fps=30 --scale=240:240`, async function (error, stdout, stderr) {
                         const gif = await fs.readFileSync('./media/output.gif', { encoding: "base64" })
                         await client.sendImageAsSticker(from, `data:image/gif;base64,${gif.toString('base64')}`)
-                    })
-                } else (
-                    client.reply(from, '[¥] Kirim video dengan caption ¥stickerGif max 10 sec!', id)
          });
       }
    }
-
    if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
