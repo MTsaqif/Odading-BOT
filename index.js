@@ -412,17 +412,6 @@ conn.sendMessage(id, 'ulangi dengan  ¥pict cewek/cowok\n\nMisal: ¥pict cowok' 
          });
       }
    }
-      if (caption == '¥stikergif')
-                if (mimetype === 'video/mp4' && message.duration < 10 || mimetype === 'image/gif' && message.duration < 10) {
-                    const mediaData = await decryptMedia(message, uaOverride)
-                    const filename = `./media/aswu.${mimetype.split('/')[1]}`
-                    await fs.writeFileSync(filename, mediaData)
-                    await exec(`gify ${filename} ./media/output.gif --fps=30 --scale=240:240`, async function (error, stdout, stderr) {
-                        const gif = await fs.readFileSync('./media/output.gif', { encoding: "base64" })
-                        await client.sendImageAsSticker(from, `data:image/gif;base64,${gif.toString('base64')}`)
-         });
-      }
-   }
    if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
