@@ -145,7 +145,7 @@ conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
 else if (text == '!help')
 {
-conn.sendMessage(id, tambahan.!help ,MessageType.text);
+conn.sendMessage(id, tambahan.help ,MessageType.text);
 }
 else if (text == '#help')
 {
@@ -153,7 +153,7 @@ conn.sendMessage(id, tambahan.#help ,MessageType.text);
 }
 else if (text == '!menu')
 {
-conn.sendMessage(id, tambahan.!menu ,MessageType.text);
+conn.sendMessage(id, tambahan.menu ,MessageType.text);
 }
 else if (text == '#menu')
 {
