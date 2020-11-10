@@ -572,7 +572,7 @@ const get = require('got')
     });
     }
 
-if (text.includes("!animepict"))
+if (text.includes("@animepict"))
    {
     var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
     var nime = items[Math.floor(Math.random() * items.length)];
