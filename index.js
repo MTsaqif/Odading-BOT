@@ -117,6 +117,8 @@ conn.sendMessage(id, tambahan.donasi ,MessageType.text);
 }
 if (text == '#donate')
 {
+conn.sendMessage(id, tambahan.donasi ,MessageType.text);
+}
 else if (text == '!info')
 {
 conn.sendMessage(id, tambahan.info ,MessageType.text);
