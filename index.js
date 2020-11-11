@@ -103,7 +103,29 @@ if (text == 'halo')
 {
 conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == 'hai')
+if (text == '!donasi')
+{
+conn.sendMessage(id, tambahan.donasi ,MessageType.text);
+}
+if (text == '#donasi')
+{
+conn.sendMessage(id, tambahan.donasi ,MessageType.text);
+}
+if (text == '!donate')
+{
+conn.sendMessage(id, tambahan.donasi ,MessageType.text);
+}
+if (text == '#donate')
+{
+else if (text == '!info')
+{
+conn.sendMessage(id, tambahan.info ,MessageType.text);
+}
+else if (text == '#info')
+{
+conn.sendMessage(id, tambahan.info ,MessageType.text);
+}
+else if (text == 'Hai')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
