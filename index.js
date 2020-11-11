@@ -151,9 +151,17 @@ else if (text == '!menu')
 {
 conn.sendMessage(id, tambahan.menu ,MessageType.text);
 }
+else if (text == '¥help')
+{
+conn.sendMessage(id, tambahan.menu ,MessageType.text);
+}
 else if (text == '#help')
 {
 conn.sendMessage(id, tambahan.menu ,MessageType.text);
+}
+else if (text == '¥rules')
+{
+conn.sendMessage(id, tambahan.rules ,MessageType.text);
 }
 else if (text == '#menu')
 {
@@ -165,7 +173,7 @@ conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
 else if (text == 'Test')
 {
-  conn.sendMessage(id, tambahan.test, MessageType.text);
+conn.sendMessage(id, tambahan.test, MessageType.text);
 }
 else if (text == 'HAI')
 {
@@ -416,7 +424,7 @@ conn.sendMessage(id, 'ulangi dengan  !pict cewek/cowok\n\nMisal: !pict cowok' ,M
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '!pantun')
+      if (is == '¥pantun')
       {
 
          fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-pantun-pakboy.txt')
@@ -674,6 +682,7 @@ if (text.includes("¥loli"))
     
     });
     }
+
  else if (text.includes("¥ttsid")) {
   var teks = text.split("¥ttsid ")[1];
   var path = require('path');
