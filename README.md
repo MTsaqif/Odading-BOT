@@ -16,7 +16,7 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 > pkg install ffmpeg
 > pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/aditiapribadiansyah/Odading-BOT
+> git clone https://github.com/MTsaqif/Odading-BOT
 > cd Odading-BOT
 > bash install.sh
 > node index.js
@@ -53,4 +53,4 @@ ket : ✅ : aktif
 * [`termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
 * [`botst4rz`](https://github.com/Bintang73/botst4rz)
 ## DONASI
-via pulsa 081220595591
+via pulsa Three 0896-0141-6330
